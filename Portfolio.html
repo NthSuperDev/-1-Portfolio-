@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <title>Portfolio | Homepage</title>
+    <style>
+        /* Gör att hela sidan tar upp hela skärmen */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+
+        /* Gör att innehållet trycks upp och SVG hålls längst ner */
+        .content {
+            flex: 1; /* Tar upp allt utrymme för att trycka ner SVG */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            font-family: "Luckiest Guy", cursive;
+            font-size: 48px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .cloud-effect-button {
+            background-color: #00b4d8;
+            color: white;
+            font-family: "Luckiest Guy", cursive;
+            font-size: 24px;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            margin: 10px;
+        }
+
+        .cloud-effect-button:hover {
+            background-color: #90e0ef;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transform: scale(1.1);
+            color: black;
+        }
+
+        /* Gör att vågen hålls längst ner på sidan */
+        .wave {
+            width: 100%;
+            position: relative;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <p class="header">Welcome to my portfolio!</p>
+        <button class="cloud-effect-button" onclick="location.href='My Projects.html'">My Projects</button>
+    </div>
+
+    <svg class="wave" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#ff7f32" d="M0,192L48,165.3C96,139,192,85,288,74.7C384,64,480,96,576,138.7C672,181,768,235,864,218.7C960,203,1056,117,1152,80C1248,43,1344,53,1392,58.7L1440,64V320H0Z"></path>
+    </svg>
+
+</body>
+</html>
